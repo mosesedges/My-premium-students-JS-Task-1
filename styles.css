@@ -1,0 +1,46 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.container {
+    display: block;
+    background-color: rgb(87, 86, 84);
+    margin:auto;
+    max-width: 80%;
+    border: 8px royalblue solid;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: rgb(2, 29, 103);
+}
+
+#save-btn {
+    background: rgb(113, 7, 206);
+}
+
