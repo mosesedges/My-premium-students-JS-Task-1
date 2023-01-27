@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="home-el">
+                <h3>HOME</h3>
+                <h4 id="home-score-el">0</h4>
+                <div class="increment-el">
+                    <button id="add1-el" onclick="add1()"> +1 </button>
+                    <button id="add2-el" onclick="add2()"> +2 </button>
+                    <button id="add3-el" onclick="add3()"> +3 </button>   
+                </div>
+            </div>
+            <button id="reset" onclick="reset()">RESET</button>
+            <div id="guest-el">
+                <h3>GUEST</h3>
+                <h4 id="guest-score-el">0</h4>
+                <div class="increment-el">
+                    <button id="add1-el" onclick="guestAdd1()"> +1 </button>
+                    <button id="add2-el" onclick="guestAdd2()"> +2 </button>
+                    <button id="add3-el" onclick="guestAdd3()"> +3 </button>   
+                </div>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
