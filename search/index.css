@@ -1,0 +1,34 @@
+:root {
+    --home-color: lightblue;
+    --space: 5px;
+    --in-space: 10px;
+    --border-around: 5px;
+    --remove-line: none;
+}
+
+body{
+    background-color: var(--home-color);
+
+}
+
+#input-el{
+    width: 80%;
+    display: block;
+    margin:16em auto 2em auto;
+    padding: var(--in-space);
+    border-radius: var(--border-around);
+    outline: var(--remove-line);
+    border: var(--remove-line);
+}
+button{
+    width: 20%;
+    display: block;
+    margin:1em auto;
+    padding: var(--in-space);
+    border-radius: var(--border-around);
+    /* outline: var(--remove-line); */
+    /* border: var(--remove-line); */
+    font-size: larger;
+    color: whitesmoke;
+    background-color:darkorange;
+}
