@@ -1,4 +1,4 @@
-const users =[
+const users=[
     {
         id: 1,
         name: "Leanne Graham",
@@ -36,19 +36,35 @@ const searchTerm = ['gender','username']
 
 
 buttonEl.addEventListener("click", function () {
-    keys = users.map(x => ( x.name))
-    console.log(keys)
-    if (keys.indexOf(inputEl.value) > 1) {
-        console.log(keys)
-        console.log(inputEl.value)
-    }else{
-        console.log('we dey look o')
-    }
+    const {names, emails } = {names :users.map(x => x.name), emails :users.map(x => x.email)}
+    const searchTerm = [...names,...emails]
+    console.log(searchTerm)
+
+    // users.forEach((element, index, array) =>{
+    //     if(inputEl.value === element.email || inputEl.value === element.username)
+    //     console.log(array)
+    // })
+
+    const result = users.filter(user => {
+        return user.username === inputEl.value || user.email === inputEl.value
+    })
+    resulElements = result.map(x => 
+        `<li>Name: ${x.name}</li>
+        <li> Email: ${x.email}</li>
+        <li>Username: ${x.username}</li>`
+        )
+    pEl.innerHTML = resulElements
+    console.log(result)
+
+    // if (searchTerm.indexOf(inputEl.value) > 1) {
+    //     console.log('working on this thing')
+    //     console.log(inputEl.value)
+    // }else{
+    //     console.log('we dey look o')
+    // }
 })
 
-console.log(users)
 
 
 
 
-console.log('gender' in searchTerm)
