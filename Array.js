@@ -7,6 +7,7 @@ let itemNum = [9, 11, 13, 15]
 // Use slice(start, number to cut , end) to sahllow copy another arrray or get a part of the array 
 // Use join(" ") returns all the arrays together separated by a space
 // use sort() to sort an array of item and sort((a, b)=> a - b) to sort numbers of length of array
+// use some to get a true or false response from an array
 
 const newItem = items.concat(['delta', 'eco', 'foxtrot'])
 
@@ -52,13 +53,21 @@ console.log(numsorted)
 
 // sort an array of objects based on a key
 peopleVotes = [
-    {APC: '8 years', votes : 32},
-    {PDP: '16 years', votes : 12},
-    { LP :'0 years', votes: 734}
+    {Party: 'APC', votes : 32},
+    {Party: 'PDP', votes : 12},
+    { party :'LP', votes: 734}
 ]
 
-votesSorted = peopleVotes.sort((a, b) => b.votes - a.votes) // reverse sorting... hightest first
-
+const votesSorted = peopleVotes.sort((a, b) => b.votes - a.votes) // reverse sorting... hightest first
 console.log(votesSorted)
 
+// use some to see if an item is in a array
+const poll = (party) => {
+if (peopleVotes.some(president => president.party === party)) {
+    peopleVotes.push({ party: party})
+}}
+
+poll('APGA')
+
+console.log(peopleVotes)
 

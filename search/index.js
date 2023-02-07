@@ -33,15 +33,16 @@ const buttonEl = document.getElementById("search-el")
 const pEl = document.getElementById("p-el")
 const searchTerm = ['gender','username']
 
-buttonEl && buttonEl.addEventListener("click", function () {
-    console.log(inputEl.value)
-    if (inputEl.value === 'gender' || inputEl.value === 'username') {
+
+
+buttonEl.addEventListener("click", function () {
+    keys = users.map(x => ( x.name))
+    console.log(keys)
+    if (keys.indexOf(inputEl.value) > 1) {
+        console.log(keys)
         console.log(inputEl.value)
-        users.filter(x => x.searchTerm.indexOf('gender') > 1)
-            .sort(inputEl.value)
-        console.log(inputEl.value)
-    }else {
-        console.log('not working')
+    }else{
+        console.log('we dey look o')
     }
 })
 
