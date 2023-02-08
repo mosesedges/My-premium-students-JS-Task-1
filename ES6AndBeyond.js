@@ -41,3 +41,17 @@ for (item of newarr3) {
     }
 }
 
+// convert an object into an array and back to object again
+objToArr = Object.entries(newObj) // object to array
+console.log(objToArr)
+
+arrToObj = Object.fromEntries(objToArr) // array to object
+console.log(arrToObj)
+
+// saftly acess a property of an array or object with optional chaining 
+
+console.log(arrToObj?.Male) 
+console.log(arrToObj?.lady) // returns undefined instead of an error because no key item lady in the object
+
+console.log(objToArr?.[0]) 
+console.log(objToArr?.[12]) // returns undefined instead of an error because no item phone in the array
