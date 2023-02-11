@@ -1,0 +1,46 @@
+
+body {
+    background-size: border-box;
+    background-color: goldenrod;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+/* restores a skwished image to a good ratio */
+.dice-img {
+    object-fit: cover;
+    object-position: 75.8% bottom;
+    transition: all 2.8s ease-in-out;
+}
+
+.dice-img:hover{
+    border: 5px solid whitesmoke;
+    object-position: left bottom;
+    border-radius: 57px 11px 7px 42px;
+}
+
+.animal-img {
+    object-fit: cover;
+    object-position:left center;
+    opacity: 0.2;
+    transition: all 2.8s ease-in-out;
+}
+
+.animal-img:hover{
+    object-position:right center; 
+    border-top: 2px dashed white;
+    opacity: 1;
+}
+
+.swimming-img {
+    object-fit: cover;
+    object-position:0% center;
+    transition: all 1.5s ease-in-out;
+}
+.swimming-img:hover {
+transform: rotateY(180deg);
+object-position:100% center;
+}
