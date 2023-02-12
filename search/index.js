@@ -38,10 +38,10 @@ const searchTerm = ['gender','username']
 buttonEl.addEventListener("click", function () {
     const {names, emails } = {names :users.map(x => x.name), emails :users.map(x => x.email)}
     const searchTerm = [...names,...emails]
-    for (key of Object.enteries(users).flat(3)) {
-        console.log(`this is the ${key}`)
-    }
-    console.log(searchTerm)
+    // for (key of Object.enteries(users).flat(3)) {
+    //     console.log(`this is the ${key}`)
+    // }
+    // console.log(searchTerm)
 
     // users.forEach((element, index, array) =>{
     //     if(inputEl.value === element.email || inputEl.value === element.username)

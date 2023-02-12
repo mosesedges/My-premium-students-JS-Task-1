@@ -13,7 +13,7 @@ img{
 .dice-img {
     object-fit: cover;
     object-position: 75.8% bottom;
-    transition: all 2.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .dice-img:hover{
@@ -26,7 +26,7 @@ img{
     object-fit: cover;
     object-position:left center;
     opacity: 0.2;
-    transition: all 2.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .animal-img:hover{
@@ -38,7 +38,7 @@ img{
 .swimming-img {
     object-fit: cover;
     object-position:0% center;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .swimming-img:hover {
 transform: rotateY(180deg);
